@@ -1,1 +1,1 @@
-documentation-example.surge.sh
+https://documentation-example.surge.sh
