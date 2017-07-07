@@ -1,0 +1,85 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  /*need to set margin to 0 to prevent scrollbars from showing*/
+  margin: 0;
+}
+
+.wrap {
+  /*100% of viewheight*/
+  height: 100vh;
+  display: flex;
+}
+
+.flex {
+  flex: 1;
+  display: flex;
+}
+
+nav, main {
+  overflow-y: scroll;
+  padding: 0em 2em 2em 2em;
+}
+
+nav {
+  flex: 1;
+  flex-direction: column;
+}
+
+nav a {
+  display: flex;
+  text-decoration: none;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:active {
+  color: blue;
+}
+
+section code {
+  margin-left: 1em;
+  background-color: lightgrey;
+  padding: .4em;
+  border-radius: 3px;
+}
+
+main {
+  flex: 3;
+}
+
+.main-doc-title {
+  position: fixed;
+  width: 100%;
+  background-color:white;
+}
+
+.main-doc-content {
+  margin-top: 4em;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-top:1em;
+}
+
+/*create top margin to factor in fixed header when jumping to sections*/
+section.anchor {
+  padding-top: 50px; 
+  margin-top: -50px;  
+}
